@@ -13,6 +13,7 @@ capybara*.html
 
 *.rbc
 .rbx
+Dockerfile
 
 *SPIKE*
 *emfile.lock
