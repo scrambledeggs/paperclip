@@ -66,17 +66,6 @@ module Paperclip
       SENSIBLE_DEFAULT
     end
 
-    # def type_from_marcel
-    #   @type_from_marcel ||= File.open(@filepath) do |file|
-    #     Marcel::MimeType.for(file)
-    #   end
-    # end
-
-    # def type_from_mime_magic
-    #   @type_from_mime_magic ||=
-    #     MimeMagic.by_magic(File.open(@filepath)).try(:type)
-    # end
-
     def type_from_file_command
       @type_from_file_command ||=
         FileCommandContentTypeDetector.new(@filepath).detect
